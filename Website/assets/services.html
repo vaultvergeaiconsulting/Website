@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services - NovaIT Services</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="nav">
+      <a class="brand" href="../index.html">
+        <img class="brand-logo" src="logo.png" alt="Company logo" />
+        <div>
+          NovaIT Services
+          <small>Cloud • Security • Automation</small>
+        </div>
+      </a>
+
+      <nav class="navlinks" aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+
+        <!-- Hover-only dropdown (no arrow) -->
+        <div class="dropdown" aria-label="Services dropdown">
+          <a class="navlink" href="services.html" aria-haspopup="true">Services</a>
+          <div class="menu" role="menu" aria-label="Services menu">
+            <a href="#cloud"><span>Cloud & DevOps</span><em>CI/CD, migrations, reliability</em></a>
+            <a href="#security"><span>Security</span><em>Hardening, audits, monitoring</em></a>
+            <a href="#automation"><span>Automation</span><em>Workflows, scripting, IaC</em></a>
+            <a href="#support"><span>Managed IT</span><em>Helpdesk, patches, backups</em></a>
+          </div>
+        </div>
+
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn" href="contact.html">Free consulting demo</a>
+        <button class="hamburger" data-hamburger aria-label="Open menu">☰</button>
+      </div>
+    </div>
+
+    <div class="mobile-panel" aria-label="Mobile navigation">
+      <a href="../index.html">Home</a>
+
+      <button data-mobile-services>Services</button>
+      <div class="mobile-sub" data-mobile-sub style="display:none;">
+        <a href="#cloud">Cloud & DevOps</a>
+        <a href="#security">Security</a>
+        <a href="#automation">Automation</a>
+        <a href="#support">Managed IT</a>
+      </div>
+
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn" href="contact.html" style="justify-content:center;">Free consulting demo</a>
+    </div>
+  </div>
+</header>
+
+<!-- Full-width banner image + overlay -->
+<section class="services-hero">
+  <div class="services-hero__media" aria-hidden="true">
+    <img src="services/services-hero.jpg" alt="" decoding="async" />
+  </div>
+
+  <div class="container services-hero__inner">
+    <div class="card hero-panel reveal services-hero__panel">
+      <span class="badge">Services</span>
+      <h1 class="h1" style="margin-top:10px;">Practical services that improve uptime, security, and delivery speed.</h1>
+      <p class="lead" style="margin-bottom:0;">
+        Clear scopes • predictable delivery • measurable results. Pick a service below or request a custom plan.
+      </p>
+
+      <div class="hero-pillrow" data-stagger style="margin-top:14px;">
+        <span class="pill">Secure</span>
+        <span class="pill">Reliable</span>
+        <span class="pill">Automation</span>
+      </div>
+
+      <div class="hero-actions" style="margin-top:14px;">
+        <a class="btn" href="contact.html">Schedule a free consulting demo</a>
+        <a class="btn secondary" href="#cloud">View service details</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:26px;">
+  <div class="container">
+
+    <!-- Image teasers (clean + professional) -->
+    <div class="grid3" style="margin-bottom:16px;">
+      <a class="card feature reveal service-teaser" href="#cloud">
+        <div class="teaser-media">
+          <img src="services/cloud.jpg" alt="Cloud and DevOps" loading="lazy" decoding="async" />
+        </div>
+        <span class="badge">Cloud</span>
+        <h3>Cloud & DevOps</h3>
+        <p>Migrations, CI/CD, IaC, cost optimization, reliability improvements.</p>
+      </a>
+
+      <a class="card feature reveal service-teaser" href="#security">
+        <div class="teaser-media">
+          <img src="services/security.png" alt="Security and compliance" loading="lazy" decoding="async" />
+        </div>
+        <span class="badge">Security</span>
+        <h3>Security & Compliance</h3>
+        <p>Hardening, IAM, monitoring, incident readiness, security reviews.</p>
+      </a>
+
+      <a class="card feature reveal service-teaser" href="#automation">
+        <div class="teaser-media">
+          <img src="services/automation.jpg" alt="Automation workflows" loading="lazy" decoding="async" />
+        </div>
+        <span class="badge">Automation</span>
+        <h3>Automation</h3>
+        <p>Remove manual work across ops, reporting, deployments, workflows.</p>
+      </a>
+    </div>
+
+    <!-- Service blocks with images -->
+    <div id="cloud" class="card service-block reveal" style="margin-bottom:14px;">
+      <div class="service-grid">
+        <div class="service-media">
+          <img src="services/cloud.jpg" alt="Cloud and DevOps consulting" loading="lazy" decoding="async" />
+        </div>
+        <div class="service-content">
+          <h2 class="service-title">Cloud & DevOps</h2>
+          <p class="service-desc">Cloud migrations, CI/CD pipelines, infrastructure-as-code, cost optimization, and reliability improvements.</p>
+
+          <ul class="checklist" data-stagger>
+            <li>Assessment & roadmap (risks, effort, milestones)</li>
+            <li>CI/CD and release process (repeatable deployments)</li>
+            <li>Reliability upgrades (monitoring, scaling, runbooks)</li>
+          </ul>
+
+          <div class="hero-actions" style="margin-top:14px;">
+            <a class="btn" href="contact.html">Free consulting demo</a>
+            <a class="btn secondary" href="services.html#cloud">See details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="security" class="card service-block reveal is-alt" style="margin-bottom:14px;">
+      <div class="service-grid">
+        <div class="service-media">
+          <img src="services/security.png" alt="Security and compliance services" loading="lazy" decoding="async" />
+        </div>
+        <div class="service-content">
+          <h2 class="service-title">Security & Compliance</h2>
+          <p class="service-desc">Hardening, IAM best practices, monitoring/alerting, incident readiness, and security reviews.</p>
+
+          <ul class="checklist" data-stagger>
+            <li>Security baseline and hardening recommendations</li>
+            <li>Least privilege, MFA, and access improvements</li>
+            <li>Monitoring and incident response playbooks</li>
+          </ul>
+
+          <div class="hero-actions" style="margin-top:14px;">
+            <a class="btn" href="contact.html">Free consulting demo</a>
+            <a class="btn secondary" href="services.html#security">See details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="automation" class="card service-block reveal" style="margin-bottom:14px;">
+      <div class="service-grid">
+        <div class="service-media">
+          <img src="services/automation.jpg" alt="Automation and workflow engineering" loading="lazy" decoding="async" />
+        </div>
+        <div class="service-content">
+          <h2 class="service-title">Automation</h2>
+          <p class="service-desc">Automate repetitive tasks, reporting, deployments, and operations workflows to reduce manual effort.</p>
+
+          <ul class="checklist" data-stagger>
+            <li>Ops automation (scheduled tasks, patching workflows)</li>
+            <li>Deployment automation (environment consistency)</li>
+            <li>Reporting automation (dashboards, summaries)</li>
+          </ul>
+
+          <div class="hero-actions" style="margin-top:14px;">
+            <a class="btn" href="contact.html">Free consulting demo</a>
+            <a class="btn secondary" href="services.html#automation">See details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="support" class="card service-block reveal is-alt">
+      <div class="service-grid">
+        <div class="service-media">
+          <img src="services/support.jpg" alt="Managed IT support and monitoring" loading="lazy" decoding="async" />
+        </div>
+        <div class="service-content">
+          <h2 class="service-title">Managed IT</h2>
+          <p class="service-desc">Ongoing helpdesk, patching, backups, system maintenance, and proactive monitoring.</p>
+
+          <ul class="checklist" data-stagger>
+            <li>Helpdesk, maintenance, and device care</li>
+            <li>Backups, restore testing, recovery planning</li>
+            <li>Proactive monitoring and uptime improvements</li>
+          </ul>
+
+          <div class="hero-actions" style="margin-top:14px;">
+            <a class="btn" href="contact.html">Free consulting demo</a>
+            <a class="btn secondary" href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:10px;">
+          <img class="brand-logo" src="logo.png" alt="Company logo" />
+          <div>NovaIT Services<small>Clear outcomes, clean execution</small></div>
+        </div>
+        <p style="margin:0;color:rgba(255,255,255,.75);">
+          Practical IT systems that reduce risk and improve uptime.
+        </p>
+      </div>
+
+      <div>
+        <h4>Quick links</h4>
+        <div style="display:grid; gap:8px;">
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Free consulting demo</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Services</h4>
+        <div style="display:grid; gap:8px;">
+          <a href="#cloud">Cloud & DevOps</a>
+          <a href="#security">Security</a>
+          <a href="#automation">Automation</a>
+          <a href="#support">Managed IT</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <div style="display:grid; gap:8px;">
+          <a href="tel:+17040000000">+1 (704) 000-0000</a>
+          <a href="mailto:hello@novait.example">hello@novait.example</a>
+          <a href="contact.html">Contact form</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-note">© <span id="year"></span> NovaIT Services. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<script src="main.js"></script>
+</body>
+</html>

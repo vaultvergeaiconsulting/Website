@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SriChai IT Services for Secure, Reliable IT for Growing Teams</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="nav">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="assets/logo.png" alt="Company logo" />
+        <div>
+          NovaIT Services
+          <small>Cloud • Security • Automation</small>
+        </div>
+      </a>
+
+      <nav class="navlinks" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+
+        <!-- Hover-only dropdown (no arrow) -->
+        <div class="dropdown" aria-label="Services dropdown">
+          <a class="navlink" href="assets/services.html" aria-haspopup="true">Services</a>
+          <div class="menu" role="menu" aria-label="Services menu">
+            <a href="assets/services.html#cloud"><span>Cloud & DevOps</span><em>CI/CD, migrations, reliability</em></a>
+            <a href="assets/services.html#security"><span>Security</span><em>Hardening, audits, monitoring</em></a>
+            <a href="assets/services.html#automation"><span>Automation</span><em>Workflows, scripting, IaC</em></a>
+            <a href="assets/services.html#support"><span>Managed IT</span><em>Helpdesk, patches, backups</em></a>
+          </div>
+        </div>
+
+        <a href="assets/about.html">About</a>
+        <a href="assets/blog.html">Blog</a>
+        <a href="assets/contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn" href="assets/contact.html">Free consulting demo</a>
+        <button class="hamburger" data-hamburger aria-label="Open menu">☰</button>
+      </div>
+    </div>
+
+    <div class="mobile-panel" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+
+      <button data-mobile-services>Services</button>
+      <div class="mobile-sub" data-mobile-sub style="display:none;">
+        <a href="assets/services.html#cloud">Cloud & DevOps</a>
+        <a href="assets/services.html#security">Security</a>
+        <a href="assets/services.html#automation">Automation</a>
+        <a href="assets/services.html#support">Managed IT</a>
+      </div>
+
+      <a href="assets/about.html">About</a>
+      <a href="assets/blog.html">Blog</a>
+      <a href="assets/contact.html">Contact</a>
+      <a class="btn" href="assets/contact.html" style="justify-content:center;">Free consulting demo</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+
+  <!-- FULL-WIDTH HERO IMAGE CAROUSEL -->
+  <div class="hero-bleed">
+    <div class="carousel hero-carousel" data-carousel data-mode="fade" data-interval="9500" aria-label="Hero image carousel">
+      <div class="carousel__track">
+        <img class="carousel__slide is-active" src="assets/hero/slide-1.jpg" alt="Cloud infrastructure" />
+        <img class="carousel__slide" src="assets/hero/slide-2.jpg" alt="Security monitoring" />
+        <img class="carousel__slide" src="assets/hero/slide-3.jpg" alt="Automation and DevOps" />
+      </div>
+
+      <button class="carousel__btn prev" type="button" aria-label="Previous slide">‹</button>
+      <button class="carousel__btn next" type="button" aria-label="Next slide">›</button>
+
+      <div class="carousel__dots" aria-label="Carousel pagination"></div>
+    </div>
+  </div>
+
+  <!-- ONE CLEAN HERO BLOCK (NOT A CAROUSEL) -->
+  <div class="container hero-below">
+    <div class="card hero-panel reveal">
+      <div class="hero-panel-top">
+        <span class="badge">Professional IT Services</span>
+
+        <h1 class="h1">Secure, reliable IT built for speed and automation.</h1>
+
+        <p class="lead">
+          We help small businesses and startups with cloud, security, automation, and ongoing support.
+          Clear plans, fast delivery, and measurable outcomes.
+        </p>
+
+        <div class="hero-pillrow" data-stagger>
+          <span class="pill">Secure</span>
+          <span class="pill">Reliable</span>
+          <span class="pill">Automation</span>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn" href="assets/contact.html">Schedule a free consulting demo</a>
+          <a class="btn secondary" href="assets/services.html">Explore services</a>
+        </div>
+      </div>
+
+      <div class="hero-divider"></div>
+
+      <div class="hero-panel-bottom">
+        <h3 class="side-title">What you get</h3>
+
+        <div class="side-stack" data-stagger>
+          <div class="featureline">
+            <b>Fast response</b>
+            <span>Clear timelines, proactive updates, no surprises.</span>
+          </div>
+
+          <div class="featureline">
+            <b>Security-first</b>
+            <span>Best practices baked into every deployment.</span>
+          </div>
+
+          <div class="featureline">
+            <b>Scalable foundations</b>
+            <span>Built to grow with your business.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Core services</h2>
+      <!-- Removed the "Multi-page • Fast • Free hosting-ready" badge -->
+    </div>
+
+    <div class="grid3">
+      <div class="card feature">
+        <span class="badge">Cloud</span>
+        <h3>Cloud & DevOps</h3>
+        <p>Migrations, CI/CD pipelines, infrastructure-as-code, reliability improvements.</p>
+        <a href="assets/services.html#cloud" class="btn secondary" style="margin-top:12px;">Learn more</a>
+      </div>
+
+      <div class="card feature">
+        <span class="badge">Security</span>
+        <h3>Security & Compliance</h3>
+        <p>Hardening, access control, monitoring, incident readiness, audits.</p>
+        <a href="assets/services.html#security" class="btn secondary" style="margin-top:12px;">Learn more</a>
+      </div>
+
+      <div class="card feature">
+        <span class="badge">Support</span>
+        <h3>Managed IT</h3>
+        <p>Device management, backups, patching, helpdesk, ongoing maintenance.</p>
+        <a href="assets/services.html#support" class="btn secondary" style="margin-top:12px;">Learn more</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:10px;">
+          <img class="brand-logo" src="assets/logo.png" alt="Company logo" />
+          <div>NovaIT Services<small>Clear outcomes, clean execution</small></div>
+        </div>
+        <p style="margin:0;color:rgba(255,255,255,.75);">
+          We build and maintain practical IT systems that reduce risk and improve uptime.
+        </p>
+      </div>
+
+      <div>
+        <h4>Quick links</h4>
+        <div style="display:grid; gap:8px;">
+          <a href="assets/about.html">About</a>
+          <a href="assets/services.html">Services</a>
+          <a href="assets/blog.html">Blog</a>
+          <a href="assets/contact.html">Free consulting demo</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Services</h4>
+        <div style="display:grid; gap:8px;">
+          <a href="assets/services.html#cloud">Cloud & DevOps</a>
+          <a href="assets/services.html#security">Security</a>
+          <a href="assets/services.html#automation">Automation</a>
+          <a href="assets/services.html#support">Managed IT</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <div style="display:grid; gap:8px;">
+          <a href="tel:+17040000000">+1 (704) 000-0000</a>
+          <a href="mailto:hello@novait.example">hello@novait.example</a>
+          <a href="assets/contact.html">Contact form</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-note">© <span id="year"></span> NovaIT Services. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<script src="assets/main.js"></script>
+</body>
+</html>
