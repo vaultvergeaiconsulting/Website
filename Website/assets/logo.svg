@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 512 512"
+     class="vaultverge-logo"
+     role="img"
+     aria-label="VaultVerge Logo">
+
+  <style>
+    /* Smooth professional transitions */
+    .vaultverge-logo * {
+      transition: all 0.35s ease;
+      transform-origin: center;
+    }
+
+    /* Hover lift on V */
+    .vaultverge-logo:hover .vv-v {
+      transform: translateY(-6px);
+    }
+
+    /* Glow pulse */
+    .vaultverge-logo:hover .vv-core {
+      animation: pulse 1.6s ease-in-out infinite;
+    }
+
+    /* Frame highlight */
+    .vaultverge-logo:hover .vv-frame-stroke {
+      opacity: 0.8;
+    }
+
+    @keyframes pulse {
+      0%   { r: 16; opacity: 1; }
+      50%  { r: 20; opacity: 0.65; }
+      100% { r: 16; opacity: 1; }
+    }
+  </style>
+
+  <defs>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F1F5F9"/>
+      <stop offset="40%" stop-color="#CBD5E1"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </linearGradient>
+
+    <linearGradient id="vblue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="60%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#0B2A7A"/>
+    </linearGradient>
+
+    <radialGradient id="panel">
+      <stop offset="0%" stop-color="#0F1B33"/>
+      <stop offset="100%" stop-color="#05080F"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Outer hex frame -->
+  <path d="M256 58 L403 143 L403 313 L256 398 L109 313 L109 143 Z"
+        fill="url(#metal)"/>
+
+  <!-- Inner panel -->
+  <path d="M256 92 L374 160 L374 296 L256 364 L138 296 L138 160 Z"
+        fill="url(#panel)"/>
+
+  <!-- Frame stroke highlight -->
+  <path class="vv-frame-stroke"
+        d="M256 58 L403 143 L403 313 L256 398 L109 313 L109 143 Z"
+        fill="none"
+        stroke="#FFFFFF"
+        stroke-width="3"
+        opacity="0.25"/>
+
+  <!-- Stylized V -->
+  <path class="vv-v"
+        d="M165 150 L214 150 L256 308 L298 150 L347 150 L286 364 L226 364 Z"
+        fill="url(#vblue)"/>
+
+  <!-- Inner V cut -->
+  <path d="M214 172 L243 172 L256 232 L269 172 L298 172 L272 292 L240 292 Z"
+        fill="#0A1224"
+        opacity="0.7"/>
+
+  <!-- AI Core -->
+  <circle class="vv-core"
+          cx="256"
+          cy="214"
+          r="16"
+          fill="#38BDF8"/>
+
+  <!-- AI connections -->
+  <g stroke="#38BDF8" stroke-width="5" stroke-linecap="round" opacity="0.9">
+    <line x1="256" y1="214" x2="256" y2="180"/>
+    <line x1="256" y1="214" x2="230" y2="198"/>
+    <line x1="256" y1="214" x2="282" y2="198"/>
+  </g>
+
+  <!-- Nodes -->
+  <g fill="#A5F3FC">
+    <circle cx="256" cy="180" r="7"/>
+    <circle cx="230" cy="198" r="7"/>
+    <circle cx="282" cy="198" r="7"/>
+  </g>
+
+</svg>
